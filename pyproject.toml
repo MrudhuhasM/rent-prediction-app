@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "rent-prediction"
+version = "0.1.0"
+description = ""
+authors = ["MrudhuhasM <mrudhuhas@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scikit-learn = "^1.5.1"
+pandas = "^2.2.2"
+pydantic-settings = "^2.4.0"
+pydantic = "^2.8.2"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+sqlalchemy = "^2.0.32"
+wemake-python-styleguide = "^0.19.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+black = "^24.8.0"
+
+[tool.black]
+line-length = 79
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
